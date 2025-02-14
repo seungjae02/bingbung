@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/valentines", "destination": "/valentines.html" }
-    ]
-  }
-  
