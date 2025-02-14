@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            width: 100%;
+        }
+        .buttons {
+            margin-top: 20px;
+            margin-right: 80px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: red;
+            color: white;
+        }
+        .no {
+            background-color: gray;
+            color: white;
+            position: absolute
+        }
+    </style>
+</head>
+<body>
+    <h1 style="display: flex; justify-content: center; align-items: center;">Will you be my Valentine? 👉👈 ❤️</h1>
+    <div class="buttons">
+        <button class="yes" onclick="window.location.href='bingbung.html'">Yes</button>
+        <button class="no" id="no">No</button>
+    </div>
+    <script>
+        document.getElementById("no").addEventListener("mouseover", function() {
+            let x = Math.max(10, Math.random() * window.innerWidth - 200);
+            let y = Math.max(10 ,  Math.random() * window.innerHeight - 200);
+            this.style.left = `${x}px`;
+            this.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
